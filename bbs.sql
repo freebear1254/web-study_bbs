@@ -1,0 +1,32 @@
+CREATE TABLE user(
+userID VARCHAR(20) NOT NULL,
+userPassword VARCHAR(20) NOT NULL,
+userName VARCHAR(20) NOT NULL,
+userEmail VARCHAR(60) NULL,
+userAddr VARCHAR(100) NULL,
+zipcode int NULL,
+PRIMARY KEY(userID)
+)ENGINE = INNODB DEFAULT CHARACTER SET ='utf8';
+
+
+CREATE TABLE user(
+bbsID int NOT NULL,
+userID VARCHAR(20) NOT NULL,
+bbsTitle VARCHAR(50) NULL,
+bbsDate datetime NULL,
+bbsContents VARCHAR(2000) NULL,
+bbsAvailable int NULL,
+hit int NULL,
+good int NULL,
+bad int NULL,
+parentBbsID int NULL.
+PRIMARY KEY(bbsID)
+)ENGINE = INNODB DEFAULT CHARACTER SET ='utf8';
+
+
+CREATE TABLE user(
+bbsID int NOT NULL,
+fileName VARCHAR(200) NULL,
+fileRealName VARCHAR(200) NULL,
+PRIMARY KEY(bbsID)
+)ENGINE = INNODB DEFAULT CHARACTER SET ='utf8';
